@@ -35,23 +35,34 @@
   </head>
   <body class="font-serif">
     <header>
-      <nav class="bg-white p-4 flex flex-row items-center">
-        <i class="fa-solid fa-bars text-base"></i>
-        <div class="location flex gap-2 ml-4">
+      <div class="wrapper lg:w-[80%] mx-auto">
+      <nav class="bg-white p-4 flex flex-row items-center lg:py-8">
+        <i class="fa-solid fa-bars text-base md:hidden"></i>
+        <div class="location flex gap-2 ml-4 md:hidden">
           <img src="assets/location-icon.svg" alt="location-icon" />
           <span class="text-black text-base flex flex-row gap-2 items-center"
             >EN <i class="fa-solid fa-caret-down text-xs"></i
           ></span>
         </div>
-        <div class="w-20 mx-auto">
+        <div class="w-20 mx-auto md:mr-auto md:ml-10">
           <img src="assets/rode-logo.svg" alt="rode-logo" />
+        </div>
+        <div class="nav-list">
+          <ul class="hidden list list-none md:flex flex-row mx-auto space-x-8">
+            <li class="text-xl text-black">PRODUCTS</li>
+            <li class="text-xl text-black">USER GUIDE</li>
+            <li class="text-xl text-black">SOLUTIONS</li>
+            <li class="text-xl text-black">APPARELS</li>
+            <li class="text-xl text-black">SUPPORT</li>
+          </ul> 
         </div>
         <img
           src="assets/search-icon.svg"
           alt="search-icon"
-          class="ml-auto w-4"
+          class="ml-auto w-4 lg:w-8 lg:mr-16"
         />
       </nav>
+    </div>
     </header>
     <section class="hero bg-[#000000]">
       <!-- bg image on large screens -->
